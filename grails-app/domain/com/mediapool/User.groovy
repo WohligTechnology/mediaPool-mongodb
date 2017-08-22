@@ -18,12 +18,10 @@ class User {
 
 
     static constraints = {
-        profilePic url: true, blank: false
+//        profilePic url: true, blank: false
         emailId email: true, blank: false
         accessLevel blank: false
         boardCount blank: false
 
     }
-
-
 }
