@@ -9,5 +9,7 @@ class ConfirmedBasket {
 
 
     static constraints = {
+        user nullable: false
+        media nullable: false
     }
 }

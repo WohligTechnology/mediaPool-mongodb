@@ -14,10 +14,15 @@ class User {
     Date lastLogin
     Integer boardCount
     static belongsTo = [basket:Media]
-    static hasMany = [board:Board,confirmedBasket:ConfirmedBasket,searchLogs:SearchLogs]
+    static hasMany = [board:Board,confirmedBasket:ConfirmedBasket,searchLogs:SearchLogs,mediaLogs:MediaLogs]
 
 
     static constraints = {
+        profilePic url: true, blank: false
+        emailId email: true, blank: false
+        accessLevel blank: false
+        boardCount blank: false
+
     }
 
 

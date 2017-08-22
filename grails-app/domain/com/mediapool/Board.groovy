@@ -8,5 +8,7 @@ class Board {
     String urlSlug
 
     static constraints = {
+        user nullable: false
+        media nullable: false
     }
 }

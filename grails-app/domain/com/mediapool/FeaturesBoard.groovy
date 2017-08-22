@@ -6,5 +6,7 @@ class FeaturesBoard {
     Double sequence
 
     static constraints = {
+        board nullable: false
+        sequence blank: false
     }
 }

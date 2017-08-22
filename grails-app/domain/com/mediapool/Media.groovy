@@ -10,9 +10,11 @@ class Media {
     String mediaType
     String keyword
     Object files
-    static hasMany = [user:User,board:Board,confirmedBasket:ConfirmedBasket]
+    static hasMany = [user:User,board:Board,confirmedBasket:ConfirmedBasket,mediaLogs:MediaLogs]
 
     static constraints = {
-        fields size: 5..15
+        fields blank: false
+//        url blank: false, url: true
+
     }
 }
